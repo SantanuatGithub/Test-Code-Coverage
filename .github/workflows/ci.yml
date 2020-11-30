@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Dependencies
       run: npm install sfdx-cli
-    - name: Authenticate DevHub
+    
     # Store secret for dev hub
             - name: 'Populate auth file with DEVHUB_SFDX_URL secret'
               shell: bash
