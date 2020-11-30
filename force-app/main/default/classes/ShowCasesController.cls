@@ -11,7 +11,7 @@ public with sharing class ShowCasesController {
                            Subject,
                            CreatedDate,
                            AccountId                           
-                           FROM Case LIMIT 5];
+                           FROM Case LIMIT 15];
                            //WHERE ContactId =: loggedinUserId]; 
 
         if(caseList != null && !caseList.isEmpty()){
