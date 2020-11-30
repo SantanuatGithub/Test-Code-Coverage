@@ -11,7 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install Dependencies
-      run: npm install sfdx-cli
+      run: |
+          wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+          mkdir sfdx-cli
+          tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+          ./sfdx-cli/install
     - name: 'Populate auth file with DEVHUB_SFDX_URL secret'
       shell: bash
       run: 'echo ${{ secrets.SALESFORCE_AUTH_URL}} > ./SALESFORCE_AUTH_URL.txt'
