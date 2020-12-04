@@ -21,7 +21,7 @@ jobs:
       shell: bash
       run: 'echo ${{ secrets.SALESFORCE_AUTH_URL}} > ./SALESFORCE_AUTH_URL.txt'
     - name: 'Authenticate Dev Hub'
-      run: 'sfdx force:auth:sfdxurl:store -f ./SALESFORCE_AUTH_URL.txt -a devhub -d'  
+      run: 'sfdx force:auth:sfdxurl:store -f ./SALESFORCE_AUTH_URL.txt -s -a devorg 
     - name: Create Scratch Org
       run: 'sfdx force:org:create -f config/project-scratch-def.json -a scratch-org -s -d 1'
     - name: Deploy source
