@@ -1,3 +1,8 @@
+# Code Coverage
+<a href="https://codecov.io/gh/SantanuatGithub/Test-Code-Coverage">
+  <img src="https://codecov.io/gh/SantanuatGithub/Test-Code-Coverage/branch/main/graph/badge.svg?token=SdAkQzBERg"/>
+</a>
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
